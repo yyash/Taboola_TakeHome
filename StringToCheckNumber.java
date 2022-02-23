@@ -3,7 +3,7 @@ public class StringToCheckNumber {
 		String str = sentence;
 		
 		for (int i = 0; i < str.length()-1; i++) {
-			if (Character.isDigit(str.charAt(i)) {
+			if (Character.isDigit(str.charAt(i))) {
 				return true;
 			}
 		}
@@ -22,4 +22,4 @@ public class StringToCheckNumber {
 			System.out.println("There is no number in the sentence");
 		}
 	}
-}
+}	
