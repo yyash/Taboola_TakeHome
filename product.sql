@@ -12,7 +12,7 @@ CREATE TABLE Product_Price_History (
 );
 
 --Query to select all products with current price
-select pph.PName, pph.Price
+select pph.PName, p.Category, pph.Price
 from Product p join Product_Price_History pph on p.Product_Name = pph.PName
 where pph.Price_End_Date is null;
 
